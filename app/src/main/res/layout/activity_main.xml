@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/RG01"
+        android:layout_width="390dp"
+        android:layout_height="144dp"
+        android:layout_marginBottom="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ingresso1" />
+
+        <RadioButton
+            android:id="@+id/rb02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ingresso2" />
+
+        <RadioButton
+            android:id="@+id/rb03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ingresso3" />
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/rbVIP"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/vip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RG01"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <Button
+        android:id="@+id/btCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbVIP"
+        app:layout_constraintVertical_bias="0.212" />
+</androidx.constraintlayout.widget.ConstraintLayout>
